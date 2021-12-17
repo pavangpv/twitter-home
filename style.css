@@ -64,3 +64,67 @@ padding: 0 10px;
     color: var(--twitter-color);
     font-size: 30px;
 }
+.feed {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow: scroll;
+}
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+.feed header h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.feed::-webkit-scrollbar {
+    display: none;
+}
+.feed {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+/* tweet box */
+
+.tweetbox_input img {
+border-radius: 50%;
+height: 40px;
+}
+.tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+.tweetbox form {
+    display: flex;
+    flex-direction: column;
+}
+.tweetbox_input {
+    display: flex;
+    padding: 20px; 
+}
+.tweetbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.tweetBox_tweetButton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+
+}
